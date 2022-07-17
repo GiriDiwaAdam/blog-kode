@@ -21,7 +21,7 @@ atau sublime text, kita sudah bisa menulis isi dari blog kita sendiri.
 Oke tanpa ber lama-lama lagi kita masuk pembahasanya.
 
 1. Kalian sudah harus menginstall hugo Jika kalian belum menginstall kalian bisa pergi ke halaman ini (https://github.com/gohugoio/hugo/releases),
-   dan pilih sesuai dengan windows yang kalian pakai Jika kalian pakai windows jika kalian pakai linux gunakan perintah ini ``wget https://github.com/gohugoio/hugo/releases/download/v0.24.1/hugo_0.24.1_Linux-64bit.deb``
+   dan pilih sesuai dengan windows yang kalian pakai Jika kalian pakai windows jika kalian pakai linux gunakan perintah ini ``wget`` atau ``sudo``
    pastikan ketika kalian install sesuaikan dengan system operasi yang kalian pakai.
 
 2. Jika sudah terinstall silahkan masuk ke folder dimana hugo berada,kalau saya berada di ``C:\Hugo\Sites`` sesuaikan dengan tempat
