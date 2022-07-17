@@ -1,4 +1,5 @@
 ---
+author: "Giri Diwa Adam"
 title: "Ngeblog Ala Programmer Di Hugo"
 date: 2022-07-17T20:15:07+07:00
 draft: false
