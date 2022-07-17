@@ -25,7 +25,7 @@ Saat ini hugo telah dilisensi di bawah Apache License 2.0 framework ini sendiri 
 diantaranya (Mudah,cepat, dan dapat di konfigurasi). Hugo sendiri mengambil direktori dengan konten
 dan template dan membuatnya menjadi situs web HTML lengkap
 
-> Hugo sendiri mengambil markdown sebagai metadata anda sendiri bisa menjalakan hugo di manapun anda berada. Hal ini membuat hugo SSG dapat berfungsi dengan baik untuk host bersama dengan sistem lain.
+Hugo sendiri mengambil markdown sebagai metadata anda sendiri bisa menjalakan hugo di manapun anda berada. Hal ini membuat hugo SSG dapat berfungsi dengan baik untuk host bersama dengan sistem lain.
 
 
 ## Cara penginstalan Hugo ##
@@ -36,7 +36,7 @@ Apa saja yang di perlukan :
 - Terminal 
 - Installer Hugo
 
-Pertama silahkan kalian kunjungi website ini _(https://github.com/gohugoio/hugo/releases)_ lalu kalian pilih installer sesuai dengan sistem operasi kalian Jika **64bit** gunakan yang 64 bit jika **32bit** Gunakan yang 32 bit, namun karena sistem operasi saya yang 64bit maka saya gunakan 64bit.
+Pertama silahkan kalian kunjungi website ini (https://github.com/gohugoio/hugo/releases) lalu kalian pilih installer sesuai dengan sistem operasi kalian Jika **64bit** gunakan yang 64 bit jika **32bit** Gunakan yang 32 bit, namun karena sistem operasi saya yang 64bit maka saya gunakan 64bit.
 
 Setelah selesai di download silahkan extrak terlebih dahulu file nya dan letakkan di data ```C:/namafolder/bin``` dan jangan lupa edit enviroment di windows dan arahkan ke tempat kalian install hugo tadi.
 
