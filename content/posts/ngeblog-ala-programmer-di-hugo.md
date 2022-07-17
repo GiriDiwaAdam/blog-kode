@@ -5,7 +5,7 @@ draft: false
 featured_image: "ngeblogdi-hugo.png"
 
 tags:
--hugo
+- hugo
 ---
 
 Hugo merupakan sebuah SSG yang flexibel dan mudah dalam penggunaanya,tak heran banyak orang
@@ -34,14 +34,6 @@ Oke tanpa ber lama-lama lagi kita masuk pembahasanya.
    dan silahkan ber-experiment dengan tema baru.
 
 5. Dan untuk membuat sebuah post gunakan perintah ``hugo new posts/nama_konten.md`` dan isi dengan markdown berikut:
-
->----
->title:"nama judul"
->date:"tanggal-pembuatan"
->draft:false (kalau true maka postnya nggak keluar)
->featured_image:sesuaikan dengan settingantema
->tags:(tags yang di pakai)
->----
 
 6. setelah selesai jalankan server hugo dengan perintah ``hugo server`` masuk terlebih dahulu ke folder situs kalian
 7. dan jika tampilanya kosong,maka tandanya ada yg terlewat maka dari itu setting di ``config.toml`` dan aktifkan 
