@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<br><br><br><br><br>
+    <div class="section-header text-center">
+        <h1>Ini Dia Yang Kamu Cari</h1>
+        <p class="text-nornmal fs-6 ">Topik Artikel Di Halaman  {{ .Title }}.</p>
+    </div>
+    <br><br>
+            <div class="container">
+                <div class="section-body">
+                    <div class="row">
+                        {{ range .Paginator.Pages }}
+                        <div class="col-md-4 mb-5">
+                            <div class="card">
+                               
+                                <a class="text-decoration-none text-normal" href=" {{ .Permalink }} ">
+                                    <img src="/img/{{ .Params.featured_image }}" alt="" class="card-img-top">
+                                    
+                                </a>
+                                <div class="card-body">
+                                    <h3 class="card-title text-center fs-5"><a class="text-decoration-none" href=" {{ .Permalink }} ">{{ .Title }}</a></h3>
+                                    <p class="fs-6 text-normal">{{ .Summary }}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+
+
+                        <div class="artikel-pagination">
+                            {{ template "_internal/pagination.html" . }}
+                        </div>
+                    </div>
+                    <a href="http://localhost:1313"><span class="btn btn-secondary mb-5">Back to Home</span></a>
+
+                    
+
+
+                </div>
+            </div>
+{{ end }}

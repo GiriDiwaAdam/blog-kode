@@ -1,0 +1,24 @@
+{{ define "main"}}
+<section>
+   
+    <div class="container">
+        <div class="col-md-8 col-sm-4 col-md-6 mt-5">
+            <h1 class="text-normal fs-4 text-center pt-7">Pilihan Yang di tampilkan</h1>
+            <div class="row">
+                {{ range $taxonomy_term, $taxonomy := .Site.Taxonomies }}
+                {{ with $.Site.GetPage (printf "/%s" $taxonomy_term) }}
+                <li class="list-group">
+                    <section class="list-group-item d-flex justify-content-between align-items-center">
+                        <a href="{{ .Permalink }}">{{ $taxonomy_term }}</a>
+                    </section>
+                </li>
+                {{ end }}
+
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+{{ end }}

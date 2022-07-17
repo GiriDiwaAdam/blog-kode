@@ -1,0 +1,109 @@
+{{ define "main" }}
+
+<div class="wrapper mb-5">
+    <div class="container">
+        <section class="" style="margin-top: 7em;" id="artikel">
+            <div class="container-fluids">
+                <div class="row">
+                    <div class="card col-lg-8 col-sm-12">
+                        <div class="card-body p-3">
+                            <p>{{ .Params.author }} |<small>{{  .Date.Format "02 Jan 2006"  }}</small> </p>
+                            <h2 class=" font-weight-bold">{{.Title}}
+                            </h2>
+                            <hr>
+                            <div>
+                                {{ with .Params.tags }}
+                                {{ range .}}
+                                <span class=" badge badge-info"><a class=" text-white"
+                                        href="/tags/{{ . | urlize }}">{{ . }}</a></span>
+                                {{ end }}
+                                {{ end }}
+                            </div>
+                            <br><br>
+                            <center>
+                                <div>
+                                    <img class=" img-fluid" src="/img/{{ .Params.featured_image }}" alt="" srcset="">
+                                </div>
+
+                            </center>
+                            <br><br>
+                            {{ .Content }}
+                        </div>
+                        <br><br>  <br><br>
+                        <a href="http://localhost:1313"><span class="btn btn-secondary mb-5">Back to Home</span></a>
+                        <hr>
+                        <div id="disqus_thread"></div>
+                        <script>
+                            /**
+                             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                            /*
+                            var disqus_config = function () {
+                            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                            };
+                            */
+                            (function () { // DON'T EDIT BELOW THIS LINE
+                                var d = document,
+                                    s = d.createElement('script');
+                                s.src = 'https://wibucode.disqus.com/embed.js';
+                                s.setAttribute('data-timestamp', +new Date());
+                                (d.head || d.body).appendChild(s);
+                            })();
+                        </script>
+                        <noscript>Please enable JavaScript to view the <a
+                                href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-5 mt-5">
+                            <div class="card-body">
+                                <span class=" font-weight-bold">News letter</span> <br>
+                                Dapatkan Informasi serta berita terbaru dari kami
+                                <br><br><br>
+                                <form action="">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingInput" placeholder="nama">
+                                        <label for="floatingInput">Nama</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="emailkamu@gmail.com">
+                                        <label for="floatingInput">E-mail</label>
+                                    </div>
+                                        <button type="submit" class=" btn btn-secondary">Kirim</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class=" mb-5">
+                            <!-- <img src="/img/ad1.png" alt="" srcset=""> -->
+                        </div>
+
+                        <div class="card mb-5">
+                            <div class="card-header">
+                                Kategori
+                            </div>
+                            <div class="card-body">
+                                {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                                <button type="button" class="btn btn-primary">
+                                    <a class="text-white text-decoration-none" href="/tags/{{ $name }}">{{ $name }}</a> <span class="badge text-bg-info">{{ .Count }}</span>
+                                </button>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </div>
+</div>
+
+
+
+{{end}}
