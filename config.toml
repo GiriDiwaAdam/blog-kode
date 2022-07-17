@@ -8,5 +8,6 @@ paginate= 6
         Description ="membantu pemula untuk belajar bahasa pemrograman web"
     [taxonomy]
         tag ="tags"
+        category ="categories"
     [Search]
         keywords = "Pengenalan Hugo"
