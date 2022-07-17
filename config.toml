@@ -2,7 +2,7 @@ baseURL = 'https://kodeblog.netlify.app/'
 languageCode = 'id-id'
 title = 'Blog kode'
 theme = "fresh"
-summaryLength= 5
+summaryLength= 3
 paginate= 6
     [params]
         Description ="membantu pemula untuk belajar bahasa pemrograman web"
