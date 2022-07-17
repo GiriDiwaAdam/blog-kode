@@ -1,4 +1,4 @@
-baseURL = 'https://localhost:1313/'
+baseURL = 'https://kodeblog.netlify.app/'
 languageCode = 'id-id'
 title = 'Blog kode'
 theme = "fresh"
