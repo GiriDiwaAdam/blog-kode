@@ -52,10 +52,8 @@ Oke Jika semua sudah beres kini tinggal kalian lihat hasilnya di ``localhost:131
 
 Demikian tutorial singkat yang dapat saya sampaikan mohon maaf jika belum ada gambar di sini saya masih terus
 mengembangkan blognya agar lebih baik lagi kedepanya, Jika kurang jelas dapat bertanya di kolom komentar atau
-kunjungi situs refrensi berikut ini:
+kunjungi situs refrensi berikut ini: petanikode, wibucode
 
-``https://www.petanikode.com/membuat-blog-dengan-hugo/``
-``https://wibucode.com/p/hugo/menjalankan-hugo-di-local/``
 
 
 
