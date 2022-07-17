@@ -38,7 +38,7 @@ Apa saja yang di perlukan :
 
 Pertama silahkan kalian kunjungi website ini (https://github.com/gohugoio/hugo/releases) lalu kalian pilih installer sesuai dengan sistem operasi kalian Jika **64bit** gunakan yang 64 bit jika **32bit** Gunakan yang 32 bit, namun karena sistem operasi saya yang 64bit maka saya gunakan 64bit.
 
-![alt hugo](Hugoreleases.png)
+![alt hugo](/themes/fresh/static/img/Hugoreleases.png)
 
 Setelah selesai di download silahkan extrak terlebih dahulu file nya dan letakkan di data ```C:/namafolder/bin``` dan jangan lupa edit enviroment di windows dan arahkan ke tempat kalian install hugo tadi.
 
