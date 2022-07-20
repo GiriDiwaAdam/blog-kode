@@ -9,6 +9,7 @@ tags:
 - hugo
 ---
 ## Pembukaan ##
+
 Hugo merupakan sebuah SSG yang flexibel dan mudah dalam penggunaanya,tak heran banyak orang
 yang ingin menggunakanya,terutama para programmer yang ingin bebas ber-experiment dengan tema
 mereka, lain halnya jika kita menggunakan CMS kita harus mengikuti aturan yang telah di buat
