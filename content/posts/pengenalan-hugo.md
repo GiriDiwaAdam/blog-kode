@@ -3,6 +3,7 @@ author: "Giri Diwa Adam"
 title: "Pengenalan Hugo"
 date: 2022-07-15T21:20:58+07:00
 draft: false
+robotsdisallow: true
 featured_image: "hugo.png"
 
 tags:

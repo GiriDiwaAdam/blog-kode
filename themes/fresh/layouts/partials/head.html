@@ -19,6 +19,9 @@
     <meta property="og:site_name" content="blogkode" />
     <meta property="og:image" content="/img/{{ .Params.featured_image }}" />
     <meta name="google-site-verification" content="3bt0w9ZtwAgE--Ln9EhyVYujJCJZKvcZX4N1AP9fHns" />
+    {{ with .Params.robotsdisallow }}
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    {{ end }}
     
     <!-- Meta color -->
     <meta name="theme-color" content="#0284c7">
